@@ -28,10 +28,16 @@ var assert=require("assert");
  
  //Adding addition function
 function addition (a, b) {
-     return 2;
+     var c
+     c = (a + b);
+     return c;
 }
  
  //This is the first attempt at a failing addition test.
 assert (addition (1, 1) == 2, '1 + 1 equals 2');
  //First red condition
  
+ assert(addition(+1,+0)===+1,'1+0 equals 1');
+ assert(addition(+1,-1)===+0,'1+-1 equals 0');
+ assert(addition(-1,+1)===+0,'-1+1 equals 0');
+ assert(addition(-1,+0)===-1,'-1+0 equal -1');
