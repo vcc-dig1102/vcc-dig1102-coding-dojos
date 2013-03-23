@@ -45,3 +45,17 @@ assert (addition (1, 1) == 2, '1 + 1 equals 2');
  assert(addition(+0, 0)===+0, '0 + 0 equals 0');
  assert(addition(+0,-1)===-1, '0 + -1 equals -1');
  
+/**
+ * testing subtraction():
+ * one | two | out
+ * ====+=====+====
+ *  +1 | +1  | +0
+ *  +1 | +0  | +1
+ *  +1 | -1  | +2
+ *  -1 | +1  | -2
+ *  -1 | +0  | -1
+ *  -1 | -1  | -2
+ *  +0 | +1  | +1
+ *  +0 | +0  | +0
+ *  +0 | -1  | -1
+ */
