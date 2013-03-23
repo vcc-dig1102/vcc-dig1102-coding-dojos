@@ -41,4 +41,7 @@ assert (addition (1, 1) == 2, '1 + 1 equals 2');
  assert(addition(-1,+1)===+0,'-1+1 equals 0');
  assert(addition(-1,+0)===-1,'-1+0 equal -1');
  assert(addition(-1, -1)  === -2, '-1 + -1 = -2');
-assert(addition(0, +1) === 1, '0 and 1 is 1');
+ assert(addition(0, +1) === 1, '0 and 1 is 1');
+ assert(addition(0, 0) === 0, '0 + 0 equals 0');
+ assert(addition(0, -1) === -1, '0 + -1 equals -1');
+ 
