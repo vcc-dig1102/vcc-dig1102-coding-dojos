@@ -54,8 +54,18 @@ assert (addition (1, 1) == 2, '1 + 1 equals 2');
  *  +1 | -1  | +2
  *  -1 | +1  | -2
  *  -1 | +0  | -1
- *  -1 | -1  | -2
- *  +0 | +1  | +1
+ *  -1 | -1  | 0
+ *  +0 | +1  | -1
  *  +0 | +0  | +0
- *  +0 | -1  | -1
- */
+ *  +0 | -1  | +1
+*/
+
+// This is the subration function
+
+var subtraction = function (a,b) {
+    
+    return (a - b);
+}
+
+// this is the first failing test for subtration
+assert.equal(0, subtraction(1, 1), '1 - 1 = 0');
