@@ -13,3 +13,12 @@ var assert = require("assert"),
  * do: PASS 3 -- take a walk down the hallway, change the state of the doors
  * test: does the hallway match our expected hallway state?
  */
+ var hallway = {
+    doors: []    
+};
+ 
+ assert( hallway );
+ assert( hallway.doors );
+ assert( hallway.doors = 100);
+ 
+ 
