@@ -14,11 +14,11 @@ var assert = require("assert"),
  * test: does the hallway match our expected hallway state?
  */
  var hallway = {
-    doors: []    
+    doors: [100]    
 };
  
  assert( hallway );
  assert( hallway.doors );
- assert( hallway.doors = 100);
+ assert( hallway.doors.length == 1);
  
  
