@@ -1,15 +1,25 @@
 var assert = require("assert"),
-    hundredDoors = require("./2013-04-06-code");
+    hundredDoors = require("./2013-04-13-code");
 
-/**
- * test: do we have a hallway?
- * test: do we have doors in our hallway?
- * test: do we have 100 doors?
- * test: are all the doors closed?
- * do: PASS 1 -- take a walk down the hallway, change the state of the doors
- * test: are all the doors open?
- * do: PASS 2 -- take a walk down the hallway, change the state of the doors
- * test: is every EVEN door closed? is every ODD door open?
- * do: PASS 3 -- take a walk down the hallway, change the state of the doors
- * test: does the hallway match our expected hallway state?
- */
+// test: do we have a Hallway?
+assert( hallway)
+
+// test: do we have Doors in our Hallway?
+
+// test: do we have 100 Doors?
+
+// test: are all the Doors "closed"?
+
+// do: PASS 1 -- take a walk down the hallway, change the state of the doors
+
+// test: are all the Doors "open"?
+
+// do: PASS 2 -- take a walk down the hallway, change the state of the doors
+
+// test: is every EVEN Door "closed"? is every ODD Door "open"?
+
+// do: PASS 3 -- take a walk down the hallway, change the state of the doors
+
+// test: does the Hallway match our expected state?
+
+

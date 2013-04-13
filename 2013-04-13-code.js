@@ -18,3 +18,5 @@
  */
 module.exports = { // PROD CODE
 }
+
+var hallway
