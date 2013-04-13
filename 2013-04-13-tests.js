@@ -9,9 +9,49 @@ assert(hundredDoors.hallway.doors);
 
 // test: do we have 100 Doors?
 assert.equal(hundredDoors.hallway.doors.length, 10);
+
 // test: are all the Doors "closed"?
-assert.equal(hundredDoors.hallway.doors[0],0);
+
+/* // VERY longhand...
+var index = 0;
+while ( index < hundredDoors.hallway.doors.length ){
+    var door = hundredDoors.hallway.doors[index];
+    
+    assert.equal(door, 0);
+    
+    index++;
+}
+*/
+
+/* // Slightly shorter...
+for ( var index = 0; index < hundredDoors.hallway.doors.length; index++ ){
+    var door = hundredDoors.hallway.doors[index];
+    
+    assert.equal(door, 0);
+}
+*/
+
+// Much shorter, and preferred...
+hundredDoors.hallway.doors.forEach(function(door){
+    assert.equal(door, 0);
+});
+
+
+/* // What that voodoo do...
+var list = [ ];
+
+list.forEach = function(callback){
+    for ( var index = 0; index < this.length; index++ ){
+        callback(this[index], index, this);
+    }
+}
+*/
+
+
+
 // do: PASS 1 -- take a walk down the hallway, change the state of the doors
+assert(hundredDoors.hallway.toggle);
+
 
 // test: are all the Doors "open"?
 
