@@ -10,7 +10,7 @@ assert(hundredDoors.hallway.doors);
 // test: do we have 100 Doors?
 assert.equal(hundredDoors.hallway.doors.length, 10);
 // test: are all the Doors "closed"?
-
+assert.equal(hundredDoors.hallway.doors[0],0);
 // do: PASS 1 -- take a walk down the hallway, change the state of the doors
 
 // test: are all the Doors "open"?
