@@ -1,6 +1,20 @@
 var assert = require("assert"),
     hundredDoors = require("./2013-04-13-code");
 
+/**
+ * What did we do well?
+ *  - Looked up in reference; talked out decisions (mostly)
+ *  - Followed the spec for tests and production
+ *  - Baby steps (mostly), representative data set
+ * 
+ * What should we improve?
+ *  - Study and practice!
+ * 
+ * Did we meet our goals? Why or why not?
+ *  - Learned first-hand how to use dictionaries and lists
+ *  - Learned about "module.exports", "Array.forEach"
+ */
+
 // test: do we have a Hallway?
 assert(hundredDoors.hallway);
 
