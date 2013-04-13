@@ -17,6 +17,6 @@
  *  - a method of walking down the hallway for 100 passes: allPasses (Function)
  */
 module.exports = { // PROD CODE
+hallway: { }
 }
 
-var hallway
