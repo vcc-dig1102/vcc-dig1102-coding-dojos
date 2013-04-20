@@ -36,6 +36,8 @@ hundredDoors.hallway.doors.forEach( function(door) {
     assert.equal( door, 1);
 });
 
+
 //can we tell which pass we are on?
+assert.equal(passes, 1);
 
 //are all the doors in the correct state after each pass?
