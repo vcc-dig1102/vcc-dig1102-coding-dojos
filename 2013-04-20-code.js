@@ -21,10 +21,10 @@ module.exports = { // PROD CODE
         doors: [0,0,0,0,0,0,0,0,0,0],
         toggle: function ( door ) {
             if (door === 0) {
-                return door = 1;
+                return 1;
             }
             else {
-                door = 0;
+                return 0;
             }
             
         }
