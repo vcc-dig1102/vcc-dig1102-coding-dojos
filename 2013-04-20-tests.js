@@ -1,10 +1,12 @@
 var assert = require("assert"),
-    hundredDoors = require("./2013-04-13-code");
+    hundredDoors = require("./2013-04-20-code");
 
 //do we have a hallway?
-assert (hundredDoors.hallway);
+assert(hundredDoors.hallway);
 
 //do we have doors in the hallway?
+assert(hundredDoors.hallway.doors);
+
 //do we have 10 doors?
 //are all the doors closed?
 //can we change the state of a door(create toggle function)?
