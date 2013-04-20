@@ -29,7 +29,8 @@ module.exports = { // PROD CODE
             
         },
         pass: function () {
-            return this.doors.map( this.toggle );
+            this.doors = this.doors.map( this.toggle );
+            return this.doors;
             }
         
     }

@@ -32,7 +32,9 @@ hundredDoors.hallway.pass().forEach( function( door ) {
     assert.equal( door, 1);
 });
 
-
+hundredDoors.hallway.doors.forEach( function(door) {
+    assert.equal( door, 1);
+});
 
 //can we tell which pass we are on?
 
