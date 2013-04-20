@@ -18,10 +18,16 @@ hundredDoors.hallway.doors.forEach(function(door){
         
 //can we change the state of a door(create toggle function)?
 assert(hundredDoors.hallway.toggle);
+
+// can we change closed to open?
 assert(hundredDoors.hallway.toggle(0) === 1);
+
+// can we change open to closed?
 assert(hundredDoors.hallway.toggle(1) === 0); 
 
 //are all doors in the correct state after first pass?
+assert(hundredDoors.hallway.pass(function))
+//assert.equal(hundredDoors.hallway.doors, [1,1,1,1,1,1,1,1,1,1]);
 
 //can we tell which pass we are on?
 //are all the doors in the correct state after each pass?
