@@ -26,8 +26,11 @@ assert(hundredDoors.hallway.toggle(0) === 1);
 assert(hundredDoors.hallway.toggle(1) === 0); 
 
 //are all doors in the correct state after first pass?
-assert(hundredDoors.hallway.pass(function))
-//assert.equal(hundredDoors.hallway.doors, [1,1,1,1,1,1,1,1,1,1]);
+assert(hundredDoors.hallway.pass);
+assert.equal(hundredDoors.hallway.pass
+
+
 
 //can we tell which pass we are on?
+
 //are all the doors in the correct state after each pass?
