@@ -24,7 +24,7 @@
 module.exports = { // Production code
     numerals: {
         roman: function( decimalNumber ) {
-            //if decimalNumber < 4 then call function 
+         
             if ( decimalNumber === 2) {
                 return 'II';
             }
@@ -70,7 +70,7 @@ module.exports = { // Production code
             else {
             return 'I'; 
             }
-        }
-        
+        },
+        tenths: {}
     }
 };
