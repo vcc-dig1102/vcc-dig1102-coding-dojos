@@ -57,8 +57,8 @@ assert( problem.numerals.roman(8) === 'VIII');
 assert( problem.numerals.roman(9) === 'IX');
 //write a function to evaluate input for the tenths placeholder
 
-/** input
- * 
+/** input 
+ * 57  | 
  * 
  */
 assert( problem.numerals.tenths);
