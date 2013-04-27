@@ -25,6 +25,10 @@ var assert = require("assert"),
  * 500    |  D
  * 1,000  |  M
  */
+ assert(problem.numerals.roman);
+ 
+ //define a roman numeral
+ assert.equal(problem.numerals.roman, I)
  
 // For these we need to create functions
 /** input | output

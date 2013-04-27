@@ -22,5 +22,7 @@
  */
 
 module.exports = { // Production code
-    numerals: {}
+    numerals: {
+        roman: {}
+    }
 };
