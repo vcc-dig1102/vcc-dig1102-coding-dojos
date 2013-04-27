@@ -58,10 +58,20 @@ assert( problem.numerals.roman(9) === 'IX');
 //write a function to evaluate input for the tenths placeholder
 
 /** input 
- * 57  | 
+ * 11 - 19   return X
+ * 20 - 29   return XX
+ * 30 - 39   return XXX
+ * 40 - 49   return XL
+ * 50 - 59  return L
+ * 60 - 69  return LX
+ * 70 - 79  return LXX
+ * 80 - 89 return LXXX
+ * 90 - 99  XC
+ * 
  * 
  */
 assert( problem.numerals.tenths);
+assert(problem.numerals.tenths)
 
 //write a function to evaluate input for the hundreths placeholder
 //write a function to evaluate input for the thousandths placeholder
