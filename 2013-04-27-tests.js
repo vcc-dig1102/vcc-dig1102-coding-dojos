@@ -43,10 +43,19 @@ var assert = require("assert"),
  *  3     |  III
  *  4     |  IV
  *  6     |  VI
+ *  7     |  VII
+ *  8     |  VIII
+ *  9     |  IX
  */
  
 assert( problem.numerals.roman(2) === 'II');
-//assert( problem.)
+//write a function to evaluate input for the tenths placeholder
+//write a function to evaluate input for the hundreths placeholder
+//write a function to evaluate input for the thousandths placeholder
+
+
+
+
 
 
 
