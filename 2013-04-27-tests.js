@@ -28,7 +28,7 @@ var assert = require("assert"),
  assert(problem.numerals.roman);
  
  //define a roman numeral
- assert.equal(problem.numerals.roman, I)
+ assert(problem.numerals.roman(1) == 'I');
  
 // For these we need to create functions
 /** input | output
