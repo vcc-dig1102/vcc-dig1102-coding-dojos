@@ -10,6 +10,8 @@ var assert = require("assert"),
  *  D = 500
  *  M = 1,000
  */
+ 
+ assert(problem.numerals);
 
 // Is there a dictionary called "numerals"
 // Does 1 = I? see chart below
@@ -31,6 +33,8 @@ var assert = require("assert"),
  *  4     |  IV
  *  6     |  VI
  */
+ 
+ 
 
 
 

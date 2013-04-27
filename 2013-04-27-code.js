@@ -21,3 +21,6 @@
  *  - [Roman Numerals @ Wikipedia.org](http://en.wikipedia.org/wiki/Roman_numerals)
  */
 
+module.exports = { // Production code
+    numerals: {}
+};
