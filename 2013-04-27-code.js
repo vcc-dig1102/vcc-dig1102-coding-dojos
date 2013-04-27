@@ -25,6 +25,18 @@ module.exports = { // Production code
     numerals: {
         roman: function( decimalNumber ) {
             //if decimalNumber < 4 then call function 
+            if ( decimalNumber === 2) {
+                return 'II';
+            }
+            
+            if ( decimalNumber === 3) {
+                return 'III';
+            }
+            
+            if (decimalNumber === 4) {
+                return 'IV';
+            }
+            
             if ( decimalNumber === 5 ) {
                 return 'V';
             }
@@ -46,9 +58,6 @@ module.exports = { // Production code
             else {
             return 'I'; 
             }
-        }
-        roman:function(increment){
-            if 
         }
         
     }

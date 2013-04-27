@@ -49,6 +49,8 @@ var assert = require("assert"),
  */
  
 assert( problem.numerals.roman(2) === 'II');
+assert( problem.numerals.roman(3) === 'III');
+assert( problem.numerals.roman(4) === 'IV');
 //write a function to evaluate input for the tenths placeholder
 //write a function to evaluate input for the hundreths placeholder
 //write a function to evaluate input for the thousandths placeholder
