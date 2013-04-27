@@ -24,6 +24,7 @@
 module.exports = { // Production code
     numerals: {
         roman: function( decimalNumber ) {
+            //if decimalNumber < 4 then call function 
             if ( decimalNumber === 5 ) {
                 return 'V';
             }
@@ -33,9 +34,19 @@ module.exports = { // Production code
             if ( decimalNumber === 50 ) {
                 return 'L';
             }
+            if ( decimalNumber === 100) {
+                return 'C';
+            }
+            if ( decimalNumber === 500) {
+                return 'D';
+            }
+            if ( decimalNumber === 1000) {
+                return 'M';
+            }
             else {
             return 'I'; 
             }
         }
+        
     }
 };
