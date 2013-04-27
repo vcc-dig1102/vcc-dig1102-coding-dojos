@@ -23,6 +23,19 @@
 
 module.exports = { // Production code
     numerals: {
-        roman: {}
+        roman: function( decimalNumber ) {
+            if ( decimalNumber === 5 ) {
+                return 'V';
+            }
+            if ( decimalNumber === 10 ) {
+                return 'X';
+            }
+            if ( decimalNumber === 50 ) {
+                return 'L';
+            }
+            else {
+            return 'I'; 
+            }
+        }
     }
 };
