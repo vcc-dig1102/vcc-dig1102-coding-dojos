@@ -47,6 +47,9 @@ module.exports = { // Production code
             return 'I'; 
             }
         }
+        roman:function(increment){
+            if 
+        }
         
     }
 };
