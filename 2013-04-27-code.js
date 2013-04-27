@@ -40,6 +40,18 @@ module.exports = { // Production code
             if ( decimalNumber === 5 ) {
                 return 'V';
             }
+            if (decimalNumber === 6) {
+                return 'VI';
+            }
+            if (decimalNumber === 7) {
+                return 'VII';
+            }
+            if (decimalNumber === 8) {
+                return 'VIII';
+            }
+            if (decimalNumber === 9) {
+                return 'IX';
+            }
             if ( decimalNumber === 10 ) {
                 return 'X';
             }
