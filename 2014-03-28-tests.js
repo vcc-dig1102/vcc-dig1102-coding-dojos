@@ -49,7 +49,9 @@ var assert = require('assert'),
  *   +1 |  +1 |  +1
  */
  
- assert.equal(multiply(-1, -1), +1);
+ assert.equal(calculator.multiply(-1, -1), +1);
+ assert.equal(calculator.multiply(-1, +0), +0);
+ assert.equal(calculator.multiply(-1, +1), -1);
  
  /**
  * Test plan for division():
