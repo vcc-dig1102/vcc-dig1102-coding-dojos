@@ -1,3 +1,28 @@
+/**
+ * What did we do well?
+ * 
+ * - Spectating helps.
+ * - Good Teamwork!
+ * - Output for error messages AND passes
+ * - tests.forEach()
+ * 
+ * What should we improve?
+ * 
+ * - problem detection: which test is failing?
+ * - shortcuts PLZ!
+ * - talk as pairs
+ * - more baby steps
+ * 
+ * Did we meet our goals?
+ * 
+ * - learn: check!
+ * - communicate: check!
+ * - teamwork: check!
+ * - practice: check!
+ * - fun: check!
+ * - solved: NEVER!
+ */
+
 var assert = require('assert'),
     calculator = require('./2014-03-28-code.js');
 
@@ -90,20 +115,20 @@ function assertEqual(actual, expected, message){
  */
  
 var tests = [
-    
     [-1, -1, +1],
     [-1, +0, null],
     [-1, +1, -1],
     [+0, -1, +0],
     [+0, +0, null],
     [+0, +1, +0],
+/* // Not running...
     [+1, -1, -1],
     [+1, +0, null],
     [+1, +1, +1],
-    
+// */
 ];
 assert.equal(calculator.divide(+0, -1), +0, "fail!");
-tests.forEach(function(row) {
+tests.forEach(function(row){
     var a = row[0],
         b = row[1],
         c = row[2];
