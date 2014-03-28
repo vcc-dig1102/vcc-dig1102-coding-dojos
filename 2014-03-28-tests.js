@@ -89,3 +89,23 @@ function assertEqual(actual, expected, message){
  *   +1 |  +1 |  +1
  */
  
+var tests = [
+    
+    [-1, -1, +1],
+    [-1, +0, +NaN],
+    [-1, +1, -1],
+    [+0, -1, +0],
+    [+0, +0, +NaN],
+    [+0, +1, +0],
+    [+1, -1, -1],
+    [+1, +0, +NaN],
+    [+1, +1, +1],
+    
+];
+
+tests.ForEach(function(row) {
+    var a = row[0],
+        b = row[1],
+        c = row[2];
+    assertEqual(calculator.div(a, b), c);
+});
