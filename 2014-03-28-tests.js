@@ -92,20 +92,20 @@ function assertEqual(actual, expected, message){
 var tests = [
     
     [-1, -1, +1],
-    [-1, +0, +NaN],
+    [-1, +0, null],
     [-1, +1, -1],
     [+0, -1, +0],
-    [+0, +0, +NaN],
+    [+0, +0, null],
     [+0, +1, +0],
     [+1, -1, -1],
-    [+1, +0, +NaN],
+    [+1, +0, null],
     [+1, +1, +1],
     
 ];
-
-tests.ForEach(function(row) {
+assert.equal(calculator.divide(+0, -1), +0, "fail!");
+tests.forEach(function(row) {
     var a = row[0],
         b = row[1],
         c = row[2];
-    assertEqual(calculator.div(a, b), c);
+    assertEqual(calculator.divide(a, b), c, "fail on " + row);
 });
