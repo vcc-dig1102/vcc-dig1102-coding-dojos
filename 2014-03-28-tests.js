@@ -48,17 +48,31 @@ var assert = require('assert'),
  *   +1 |  +0 |  +0
  *   +1 |  +1 |  +1
  */
- 
- assert.equal(calculator.multiply(-1, -1), +1);
- assert.equal(calculator.multiply(-1, +0), +0);
- assert.equal(calculator.multiply(-1, +1), -1);
- assert.equal(calculator.multiply(+0, -1), +0);
- assert.equal(calculator.multiply(+0, +0), +0);
- assert.equal(calculator.multiply(+0, +1), -0);
- assert.equal(calculator.multiply(+1, -1), -1);
- assert.equal(calculator.multiply(+1, +0), +0);
- assert.equal(calculator.multiply(+1, +1), +1);
- 
+var tests = [
+    [ -1, -1, +1 ],
+    [ -1, +0, +0 ],
+    [ -1, +1, -1 ],
+    [ +0, -1, +0 ],
+    [ +0, +0, +0 ],
+    [ +0, +1, +0 ],
+    [ +1, -1, -1 ],
+    [ +1, +0, +0 ],
+    [ +1, +1, +1 ],
+];
+
+tests.forEach(function(row){
+    var a = row[0],
+        b = row[1],
+        c = row[2];
+        
+    assertEqual(calculator.multiply(a, b), c);
+});
+
+function assertEqual(actual, expected, message){
+    assert.equal(actual, expected, message);
+    console.log('pass!');
+}
+
  /**
  * Test plan for division():
  * 
