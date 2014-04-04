@@ -16,3 +16,7 @@ var assert = require('assert'),
 * 10 | -1
  
 */ 
+
+assert( hallway );
+
+assert( hallway.door );
