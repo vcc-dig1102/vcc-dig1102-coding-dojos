@@ -17,6 +17,14 @@ var assert = require('assert'),
  
 */ 
 
+var test = [
+    [1 , -1],
+    [2 , -1],
+    [3 , -1],
+    ];
+
 assert( hallway );
 
 assert( hallway.door );
+
+assert.equal(hallway.door, -1, "pass");
