@@ -22,7 +22,7 @@ assert(hallway.doors);
 assert.equal(hallway.doors.length, 10);
 
 assert.equal(hallway.doors [1], -1);
-
+assert.equal(hallway.doors [2], -1);
 
 
 /* // Maybe do this...?
