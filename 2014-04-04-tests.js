@@ -21,7 +21,7 @@ assert(hallway.doors);
 
 assert.equal(hallway.doors.length, 10);
 
-    for (var a = 1; a<=10; a++) {
+    for (var a = 0; a<= hallway.doors.length; a++) {
     assert.equal(hallway.doors [a], -1, 'Error on key ' +a);
     }
     
