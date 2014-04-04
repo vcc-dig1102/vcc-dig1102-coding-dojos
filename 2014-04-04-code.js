@@ -1,3 +1,5 @@
 module.exports = {
-   door:-1 
+   doors : {
+       1 : -1,
+   },
 };
