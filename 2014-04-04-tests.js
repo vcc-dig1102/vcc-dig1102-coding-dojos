@@ -23,8 +23,14 @@ assert.equal(hallway.doors.length, 10);
 
 assert.equal(hallway.doors [1], -1);
 assert.equal(hallway.doors [2], -1);
+assert.equal(hallway.doors [3], -1);
+assert.equal(hallway.doors [4], -1);
+assert.equal(hallway.doors [5], -1);
 
-
+    for (var a = 1; a<=5; a++) {
+    assert.equal(hallway.doors [a], -1);
+    }
+    
 /* // Maybe do this...?
 assert(hallway.doors);
 assert.equal(hallway.doors(10), {
