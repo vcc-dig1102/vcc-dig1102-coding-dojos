@@ -16,4 +16,6 @@ var assert = require('assert'),
 
 assert(hallway);
 assert(hallway.doors);
-assert.equal(hallway.door, -1, "fail");
+assert.equal(hallway.CLOSED, -1);
+assert.equal(hallway.OPENED, +1);
+assert.equal(hallway.toggle(hallway.CLOSED), hallway.OPENED);
