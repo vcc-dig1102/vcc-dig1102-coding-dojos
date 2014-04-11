@@ -4,10 +4,10 @@ module.exports = {
 
     doors : [],
     
-    toggle: function(){
-        if (this.CLOSED)
+    toggle: function(door){
+        if (door === this.CLOSED)
             return this.OPENED;
-        else 
+        else if (door === this.OPENED) 
             return this.CLOSED;
     },
 };
