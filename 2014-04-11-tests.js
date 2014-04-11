@@ -14,6 +14,7 @@ var assert = require('assert'),
  * Then after 100 trips, what is the state of the doors?
  */
 
+/* // Tests for just 1 door...
 assert(hallway);
 assert(hallway.doors);
 
@@ -23,8 +24,13 @@ assert.equal(hallway.OPENED, +1);
 assert.equal(hallway.toggle(hallway.CLOSED), hallway.OPENED);
 assert.equal(hallway.toggle(hallway.OPENED), hallway.CLOSED);
 assert.equal(hallway.toggle('askew'), undefined);
+
 assert.equal(hallway.doors.length, 1);
 assert.equal(hallway.doors [0], hallway.CLOSED);
 
 assert.equal(hallway.walk(), undefined);
 assert.equal(hallway.doors [0], hallway.OPENED);
+// */
+
+/* // Tests for just 2 doors... 
+// */
