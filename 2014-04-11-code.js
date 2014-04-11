@@ -1,7 +1,10 @@
 module.exports = {
+    CLOSED: -1,
+    OPENED: +1,
+
     doors : [],
     
-    CLOSED : -1,
-    
-    OPENED : +1,
+    toggle: function(){
+        return this.OPENED;
+    },
 };
