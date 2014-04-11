@@ -32,7 +32,7 @@ assert.equal(hallway.walk(), undefined);
 assert.equal(hallway.doors [0], hallway.OPENED);
 // */
 
-/* // Tests for just 2 doors... 
+/* // Tests for more doors... 
 // */
 
 assert(hallway);
@@ -45,13 +45,10 @@ assert.equal(hallway.toggle(hallway.CLOSED), hallway.OPENED);
 assert.equal(hallway.toggle(hallway.OPENED), hallway.CLOSED);
 assert.equal(hallway.toggle('askew'), undefined);
 
-assert.equal(hallway.doors.length, 3);
-assert.equal(hallway.doors[0], hallway.CLOSED);
-assert.equal(hallway.doors[1], hallway.CLOSED);
-assert.equal(hallway.doors[2], hallway.CLOSED);
+assert.equal(hallway.doors.length, 5);
+
+assert.deepEqual(hallway.doors, [ hallway.CLOSED, hallway.CLOSED, hallway.CLOSED, hallway.CLOSED, hallway.CLOSED]);
 
 assert.equal(hallway.walk(), undefined);
-assert.equal(hallway.doors[0], hallway.OPENED);
-assert.equal(hallway.doors[1], hallway.OPENED);
-assert.equal(hallway.doors[2], hallway.OPENED);
 
+assert.deepEqual(hallway.doors, [ hallway.OPENED, hallway.OPENED, hallway.OPENED, hallway.OPENED, hallway.OPENED]);
