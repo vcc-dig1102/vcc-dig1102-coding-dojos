@@ -2,7 +2,7 @@ module.exports = {
     CLOSED: -1,
     OPENED: +1,
 
-    doors : [],
+    doors : [-1, -1],
     
     toggle: function(door){
         if (door === this.CLOSED) return this.OPENED;

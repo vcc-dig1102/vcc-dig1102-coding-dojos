@@ -23,5 +23,6 @@ assert.equal(hallway.OPENED, +1);
 assert.equal(hallway.toggle(hallway.CLOSED), hallway.OPENED);
 assert.equal(hallway.toggle(hallway.OPENED), hallway.CLOSED);
 assert.equal(hallway.toggle('askew'), undefined);
-
-assert.equal(hallway.doors, hallway.CLOSED);
+assert.equal(hallway.doors.length, 1);
+assert.equal(hallway.doors [0], hallway.CLOSED);
+assert.equal(hallway.doors[1], hallway.CLOSED);
