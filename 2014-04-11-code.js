@@ -5,9 +5,8 @@ module.exports = {
     doors : [],
     
     toggle: function(door){
-        if (door === this.CLOSED)
-            return this.OPENED;
-        else if (door === this.OPENED) 
-            return this.CLOSED;
+        if (door === this.CLOSED) return this.OPENED;
+        
+        if (door === this.OPENED) return this.CLOSED;
     },
 };
