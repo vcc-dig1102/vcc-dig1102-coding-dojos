@@ -11,5 +11,6 @@ module.exports = {
     },
     
     walk : function() {
+        this.doors[0] = this.OPENED;
     },
 };
