@@ -2,13 +2,21 @@
  * Retrospective:
  * 
  * What did we do well?
- * 
+ * - Caught up @JeepCrew!
+ * - Added init() to build the doors
+ * - Planning + pseudocode
+ * - Communication improved through understanding
  * 
  * What should we improve?
- * 
+ * - Research "this" more, specifically "return this"
+ * - Organize tests better...!
+ * - Refactor more! Maybe as we go?
+ * - JUST DO IT!
  * 
  * Did we meet our goals?
- * 
+ * - practice: communication, refactoring, typing, planning
+ * - learn: deepEqual(), this, almost OOP, using CONSTANTS
+ * - solve: NEVER!
  *
  */
 var assert = require('assert'),
