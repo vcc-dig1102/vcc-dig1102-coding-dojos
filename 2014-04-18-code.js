@@ -12,12 +12,13 @@
  */
 module.exports = {
     OPENED : 1,
-    CLOSED : -1,
+    CLOSED : +0,
     
-    doors : [ -1 ],
+    doors : [],
     
     init : function () {
-        
+        this.doors[0] = this.CLOSED;
+        return this;
     },
     
     toggle : function(door) {
