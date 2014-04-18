@@ -24,3 +24,7 @@ assert(hallway.OPENED);
 assert(hallway.CLOSED);
 
 assert.equal(hallway.OPENED, +1);
+assert.equal(hallway.CLOSED, -1);
+
+assert(hallway.toggle);
+assert.equal(hallway.toggle(hallway.OPENED), hallway.CLOSED);

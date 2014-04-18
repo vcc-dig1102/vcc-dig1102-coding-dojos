@@ -15,4 +15,8 @@ module.exports = {
     CLOSED : -1,
     
     doors : [ -1 ],
+    
+    toggle : function() {
+        
+    }
 };
