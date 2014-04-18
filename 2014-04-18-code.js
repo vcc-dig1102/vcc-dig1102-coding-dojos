@@ -16,6 +16,10 @@ module.exports = {
     
     doors : [ -1 ],
     
+    init : function () {
+        
+    },
+    
     toggle : function(door) {
         if ( door == this.CLOSED ) {
             return this.OPENED;
