@@ -11,5 +11,8 @@
  * Then after 100 trips, what is the state of the doors?
  */
 module.exports = {
-
+    OPENED : 1,
+    CLOSED : -1,
+    
+    doors : [ -1 ],
 };
