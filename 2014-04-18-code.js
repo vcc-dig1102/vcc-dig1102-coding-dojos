@@ -26,5 +26,11 @@ module.exports = {
             return this.OPENED;
         }
             return this.CLOSED;
-    }
+    },
+    
+    walk : function() {
+        this.doors[0] = this.toggle(this.doors[0]);
+        return this;
+    },
+    
 };
