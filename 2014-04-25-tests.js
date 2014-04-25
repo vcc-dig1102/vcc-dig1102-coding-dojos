@@ -1,0 +1,36 @@
+/**
+ * If we consider all the multiples of 3 or 5 less than 10, we have the set of
+ * { 3, 5, 6, 9 }. The sum of these integers is 23.
+ * 
+ * If we consider the same multiples less than 20, we have the set 
+ * { 3, 5, 6, 9, 10, 12, 15, 18 }, the sum of which is 78.
+ * 
+ * Find the sum of the multiples of 3 or 5 less than 1000.
+ */
+
+/**
+ * Initialize :
+ * Constants : 3, 5
+ * 
+ * Function to find multiples of 3 and 5 and display them.
+ * 
+ * - Function to find multiples of 3
+ * input: maxvalue
+ * output : list of multiples 3
+ * side effects : none
+ * 
+ * - Function to find multiples of 5
+ * input: maxvalue
+ * output : list of multiples 5
+ * side effects : none
+ * 
+ * Function to merge lists and eliminate duplicates
+ * input: multiples of 3 and 5 list
+ * output: list of multiples 3 and 5 combined into one list
+ * side effects: none
+ * 
+ * Function to sum numbers in a list
+ * input: list of intergers of 3 and 5
+ * output: integers sum of 3 and 5 list
+ * side effects: none
+ */
