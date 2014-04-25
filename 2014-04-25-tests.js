@@ -55,8 +55,18 @@ assert(multiples.three);
 for (var count = 0; count <= 3; count++) {
     assert.deepEqual(multiples.three(count), []);
 }
-assert.deepEqual(multiples.three(4), [3]);
-assert.deepEqual(multiples.three(5), [3]);
-assert.deepEqual(multiples.three(6), [3]);
-assert.deepEqual(multiples.three(7), [3,6]);
+// assert.deepEqual(multiples.three(4), [3]);
+// assert.deepEqual(multiples.three(5), [3]);
+// assert.deepEqual(multiples.three(6), [3]);
+for (var count = 4; count <= 6; count++) {
+    assert.deepEqual(multiples.three(count), [3]);
+}
+// assert.deepEqual(multiples.three(7), [3,6]);
+for (var count = 7; count <= 9; count++) {
+    assert.deepEqual(multiples.three(count), [3,6]);
+}
 assert.deepEqual(multiples.three(10), [3,6,9]);
+
+assert(multiples.five);
+assert.deepEqual(multiples.five(0), []);
+assert.deepEqual(multiples.five(1), []);

@@ -19,4 +19,8 @@ module.exports = {
         return multiThree;
     },
     
+    five : function (maxValue) {
+        return [];
+    },
+    
 };
