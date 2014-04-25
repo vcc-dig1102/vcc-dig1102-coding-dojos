@@ -68,7 +68,9 @@ for (var count = 7; count <= 9; count++) {
 assert.deepEqual(multiples.three(10), [3,6,9]);
 
 assert(multiples.five);
-assert.deepEqual(multiples.five(0), []);
-assert.deepEqual(multiples.five(1), []);
 assert.deepEqual(multiples.five(6), [5]);
 assert.deepEqual(multiples.five(11), [5, 10]);
+for (var count = 0; count <= 5; count++) {
+    assert.deepEqual(multiples.five(count), []);
+}
+assert(multiples.merge);

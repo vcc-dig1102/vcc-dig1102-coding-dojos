@@ -21,7 +21,8 @@ module.exports = {
     
     five : function (maxValue) {
         if (maxValue < 6) return [];
-        if (maxValue < 11) return [5, 10];
+        if (maxValue > 5 && maxValue < 10) return [5];
+        if (maxValue > 10) return [5, 10];
     },
     
 };
