@@ -33,4 +33,19 @@
  * input: list of intergers of 3 and 5
  * output: integers sum of 3 and 5 list
  * side effects: none
+ * 
+ * var multiThree = [];
+ * for (var three = 3; three < maxValue; three += 3)
+ *      push the value three into list.  list.push("three")
+ *
+ * var multiFive = [];
+ * for (var five = 5; five < maxValue; five += 5)
+ *      push the value five into list.  list.push("five")
  */
+ 
+var assert = require("assert"),
+    multiples = require("./2014-04-25-code.js");
+    
+assert(multiples);
+assert(multiples.three);
+assert.deepEqual(multiples.three(0), []);
