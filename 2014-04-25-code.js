@@ -13,7 +13,7 @@ module.exports = {
     three : function (maxValue) {
         var multiThree = [];
         for (var three = 3; three < maxValue; three+= 3) {
-            multiThree.push = "three";
+            multiThree.push(three);
         }
 
         return multiThree;

@@ -53,3 +53,7 @@ assert.deepEqual(multiples.three(1), []);
 assert.deepEqual(multiples.three(2), []);
 assert.deepEqual(multiples.three(3), []);
 assert.deepEqual(multiples.three(4), [3]);
+assert.deepEqual(multiples.three(5), [3]);
+assert.deepEqual(multiples.three(6), [3]);
+assert.deepEqual(multiples.three(7), [3,6]);
+assert.deepEqual(multiples.three(10), [3,6,9]);
