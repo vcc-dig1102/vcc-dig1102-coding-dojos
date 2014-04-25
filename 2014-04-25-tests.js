@@ -1,11 +1,17 @@
 /**
- * If we consider all the multiples of 3 or 5 less than 10, we have the set of
- * { 3, 5, 6, 9 }. The sum of these integers is 23.
+ * What did we do well?
+ * - Improved planning, talk before typing, understanding
+ * - Mild refactoring...
+ * - Breaking down the problem into functions
  * 
- * If we consider the same multiples less than 20, we have the set 
- * { 3, 5, 6, 9, 10, 12, 15, 18 }, the sum of which is 78.
+ * What to improve?
+ * - Refactor earlier!
+ * - Practice diagramming!
+ * - Practice Refactoring!
+ * - Communication
+ * - Variable names!
  * 
- * Find the sum of the multiples of 3 or 5 less than 1000.
+ * Did we meet our goals?
  */
 
 /**
@@ -48,23 +54,30 @@ var assert = require("assert"),
     
 assert(multiples);
 assert(multiples.three);
-// assert.deepEqual(multiples.three(0), []);
-// assert.deepEqual(multiples.three(1), []);
-// assert.deepEqual(multiples.three(2), []);
-// assert.deepEqual(multiples.three(3), []);
-for (var count = 0; count <= 3; count++) {
-    assert.deepEqual(multiples.three(count), []);
-}
-// assert.deepEqual(multiples.three(4), [3]);
-// assert.deepEqual(multiples.three(5), [3]);
-// assert.deepEqual(multiples.three(6), [3]);
-for (var count = 4; count <= 6; count++) {
-    assert.deepEqual(multiples.three(count), [3]);
-}
-// assert.deepEqual(multiples.three(7), [3,6]);
-for (var count = 7; count <= 9; count++) {
-    assert.deepEqual(multiples.three(count), [3,6]);
-}
+
+// for (var count = 0; count <= 3; count++) assert.deepEqual(multiples.three(count), []);
+// for (var count = 4; count <= 6; count++) assert.deepEqual(multiples.three(count), [3]);
+// for (var count = 7; count <= 9; count++) assert.deepEqual(multiples.three(count), [3,6]);
+
+// testThrees(0, 3, []);
+// testThrees(4, 6, [3]);
+// testThrees(7, 9, [3,6]);
+
+[
+    [0, 3, [] ],
+    [4, 6, [3] ],
+    [7, 9, [3,6] ],
+    [10, 12, [3,6,9] ],
+    [13, 15, [3,6,9,12] ]
+].forEach(function(test){
+    var A = test[0],
+        B = test[1],
+        C = test[2];
+
+    testThrees(A, B, C);
+});
+assert.deepEqual(multiples.three(20), [3,6,9,12,15,18]);
+
 assert.deepEqual(multiples.three(10), [3,6,9]);
 
 assert(multiples.five);
@@ -73,4 +86,11 @@ assert.deepEqual(multiples.five(11), [5, 10]);
 for (var count = 0; count <= 5; count++) {
     assert.deepEqual(multiples.five(count), []);
 }
-assert(multiples.merge);
+
+function testThrees(A, B, C){
+    for (var count = A; count <= B; count++) 
+        assert.deepEqual(multiples.three(count), C);
+}
+
+
+// assert(multiples.merge);
