@@ -70,3 +70,5 @@ assert.deepEqual(multiples.three(10), [3,6,9]);
 assert(multiples.five);
 assert.deepEqual(multiples.five(0), []);
 assert.deepEqual(multiples.five(1), []);
+assert.deepEqual(multiples.five(6), [5]);
+assert.deepEqual(multiples.five(11), [5, 10]);
