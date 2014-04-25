@@ -48,10 +48,13 @@ var assert = require("assert"),
     
 assert(multiples);
 assert(multiples.three);
-assert.deepEqual(multiples.three(0), []);
-assert.deepEqual(multiples.three(1), []);
-assert.deepEqual(multiples.three(2), []);
-assert.deepEqual(multiples.three(3), []);
+// assert.deepEqual(multiples.three(0), []);
+// assert.deepEqual(multiples.three(1), []);
+// assert.deepEqual(multiples.three(2), []);
+// assert.deepEqual(multiples.three(3), []);
+for (var count = 0; count <= 3; count++) {
+    assert.deepEqual(multiples.three(count), []);
+}
 assert.deepEqual(multiples.three(4), [3]);
 assert.deepEqual(multiples.three(5), [3]);
 assert.deepEqual(multiples.three(6), [3]);
