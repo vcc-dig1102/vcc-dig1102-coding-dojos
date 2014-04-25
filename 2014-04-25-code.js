@@ -10,7 +10,9 @@
 
 module.exports = {
     
-    three : function three(0) {
+    three : function three(maxValue) {
+        var 
+        for (var three = 3; three < maxValue; three+= 3)
         
     },
     
